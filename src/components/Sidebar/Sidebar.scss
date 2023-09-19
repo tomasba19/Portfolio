@@ -14,8 +14,8 @@
     img {
       display: block;
       margin: 8px auto;
-      width: 24px;
-      height: auto;
+      width: 54px;
+      height: 60px;
 
       &.sub-logo {
         width: 50px;
@@ -106,16 +106,16 @@
     margin: 0;
 
     li {
-        a {
-            padding: 7px 0;
-            display: block;
-            font-size: 15px;
-            line-height: 16px;
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        line-height: 16px;
 
-            &:hover svg {
-                color: #ffd700;
-            }
+        &:hover svg {
+          color: #ffd700;
         }
+      }
     }
   }
 }
