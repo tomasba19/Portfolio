@@ -2,17 +2,14 @@ import './Logo.scss'
 import LogoHome from '../../../assets/images/Logo del home foto2.png'
 
 const Logo = () => {
-
-    return (
-        <div className="logo-container">
-            <img className='solid-logo' src={LogoHome} alt="S"/>
-        </div>
-    )
+  return (
+    <div className="logo-container">
+      <img className="solid-logo" src={LogoHome} alt="S" />
+    </div>
+  )
 }
 
-
-export default Logo;
-
+export default Logo
 
 /*
 <svg
