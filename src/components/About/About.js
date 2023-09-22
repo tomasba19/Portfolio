@@ -10,6 +10,7 @@ import {
   faNodeJs,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
+import Loader from '../Loader/Loader.js'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -26,6 +27,8 @@ const About = () => {
   }, [])
 
   return (
+    <>
+    
     <div className="container about-page">
       <div className="text-zone">
         <h1>
@@ -73,6 +76,8 @@ const About = () => {
         </div>
       </div>
     </div>
+    <Loader></Loader>
+    </>
   )
 }
 
