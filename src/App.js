@@ -5,6 +5,7 @@ import Home from './components/Home/Home.js';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 
+
 function App() {
   return (
     <>
@@ -13,7 +14,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
-      </Route>
+      </Route>   
     </Routes>
     </>
   );

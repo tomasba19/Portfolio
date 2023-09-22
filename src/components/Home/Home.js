@@ -3,6 +3,7 @@ import './Home.scss'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters.js'
 import Logo from './Logo/Logo.js'
+import Loader from '../Loader/Loader'
 
 //import logoTittleT from '../../assets/images/t - copia.png'
 //import logoTittleB from '../../assets/images/b - copia.png'
@@ -61,6 +62,7 @@ const Home = () => {
   }, [])
 
   return (
+    <>
     <div className="container home-page">
       <div className="text-zone">
         <h1>
@@ -90,6 +92,8 @@ const Home = () => {
       </div>
       <Logo />
     </div>
+    <Loader></Loader>
+    </>
   )
 }
 
