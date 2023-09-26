@@ -86,6 +86,7 @@ const Home = () => {
             idx={29}
           />
         </h1>
+        <h2>JavaScript / HTML / CSS / Node / React / Redux / SQL</h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
