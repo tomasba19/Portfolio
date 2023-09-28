@@ -1,0 +1,97 @@
+/*
+    &:focus {
+      border-color: #aaa;
+    }
+  
+ */
+
+ .contact-form {
+    width: 100%;
+    margin-top: 20px;
+  
+    ul {
+      padding: 0;
+      margin: 0;
+  
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+      }
+  
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+  
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: 0;
+      background: #444;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+      font-family: 'Coolvetica';
+      font-weight: lighter;
+
+      &:focus {
+        border-bottom: #d00000 2px solid;
+        
+      }
+    }
+  
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #444;
+      height: 50px;
+      font-size: 16px;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 150px;
+      font-family: 'Coolvetica';
+      font-weight: lighter;
+
+    }
+  
+    .flat-button {
+      color: #d00000;
+      font-size: 15px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      font-family: 'Coolvetica';
+      padding: 8px 10px;
+      border: 1px solid #d00000;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      float: right;
+      text-align: center;
+      margin-right: 10px;
+
+      &:hover {
+        //background: #ffd700;
+        background: #d00000;
+        color: #fff;
+      }
+    }
+  }
