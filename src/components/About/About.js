@@ -28,7 +28,7 @@ const About = () => {
   }, [])
 
   return (
-    <div id='about'>
+    <>
       <div className="container about-page">
         <div className="text-zone">
           <h1>
@@ -99,7 +99,7 @@ const About = () => {
         </div>
       </div>
       <Loader></Loader>
-    </div>
+    </>
   )
 }
 
