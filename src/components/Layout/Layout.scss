@@ -101,12 +101,16 @@
       &:nth-of-type(2) {
         animation-delay: 1.2s;
       }
+
+      &:nth-of-type(3) {
+        animation-delay: 1.3s;
+      }
     }
   }
 
-  .text-animate-hover {
-    &:hover {
-      color: #fff;
-    }
-  }
+ // .text-animate-hover {
+ //   &:hover {
+ //     color: #fff;
+ //   }
+ // }
 }
