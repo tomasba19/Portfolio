@@ -75,7 +75,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div id="home">
+    <>
     <div className="container home-page">
       <div className="text-zone">
         <h1>
@@ -110,7 +110,7 @@ const Home = () => {
       <Logo />
     </div>
     <Loader></Loader>
-    </div>
+    </>
     
   )
 }

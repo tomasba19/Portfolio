@@ -4,7 +4,7 @@ import Layout from './components/Layout/Layout.js';
 import Home from './components/Home/Home.js';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import { Link as ScrollLink } from 'react-scroll';
+
 
 function App() {
   return (
