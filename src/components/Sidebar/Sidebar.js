@@ -3,7 +3,13 @@ import './Sidebar.scss'
 import LogoTB from '../../assets/images/LOGOENROJO2.png'
 //import LogoSubtitle from '../../assets/images/2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import {
+  faEnvelope,
+  faHome,
+  faUser,
+  faFile,
+  faFolderOpen,
+} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 //<img className="sub-logo" src={LogoSubtitle} alt="subtitle" />
@@ -28,6 +34,14 @@ const Sidebar = () => (
       <NavLink
         exact="true"
         activeclassname="active"
+        className="projects-link"
+        to="/projects"
+      >
+        <FontAwesomeIcon icon={faFolderOpen} color="#4d4d4e" />
+      </NavLink>
+      <NavLink
+        exact="true"
+        activeclassname="active"
         className="contact-link"
         to="/contact"
       >
@@ -35,6 +49,9 @@ const Sidebar = () => (
       </NavLink>
     </nav>
     <ul>
+      <li>
+        <FontAwesomeIcon icon={faFile} color="#4d4d4e" />
+      </li>
       <li>
         <a
           target="_blank"
