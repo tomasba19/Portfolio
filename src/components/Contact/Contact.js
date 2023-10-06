@@ -23,23 +23,22 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
-
     emailjs
-        .sendForm(
-            'service_92gqf3m',
-            'template_wls403w',
-            refForm.current,
-            'fFJ1y0kWP9zZwlMUy'
-        )
-        .then(
-            () => {
-                alert('Message successfully sent!')
-                window.location.reload(false)
-            },
-            () => {
-                alert('There was an error sending the message.')
-            }
-        )
+      .sendForm(
+        'service_92gqf3m',
+        'template_wls403w',
+        refForm.current,
+        'fFJ1y0kWP9zZwlMUy'
+      )
+      .then(
+        () => {
+          alert('Message successfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('There was an error sending the message.')
+        }
+      )
   }
 
   return (
@@ -89,15 +88,18 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className='info-map'>
+        <div className="info-map">
           Tomás Barolo
           <br />
           Río Cuarto, Argentina
           <br />
           <span>tomasba19@gmail.com</span>
         </div>
-        <div className='map-wrap'>
-          <MapContainer center={[-33.12377252983355, -64.34903001135743]} zoom={13}>
+        <div className="map-wrap">
+          <MapContainer
+            center={[-33.12377252983355, -64.34903001135743]}
+            zoom={13}
+          >
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[-33.12377252983355, -64.34903001135743]} />
           </MapContainer>
