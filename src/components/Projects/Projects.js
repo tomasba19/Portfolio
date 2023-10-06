@@ -5,9 +5,9 @@ import './Projects.scss'
 import { useEffect } from 'react'
 
 const Projects = () => {
-const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('text-animate')
 
-useEffect(() => {
+  useEffect(() => {
     const timerId = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
@@ -21,11 +21,11 @@ useEffect(() => {
     <>
       <div className="container projects-page">
         <h1 className="page-title">
-            <AnimatedLetters
-                letterClass={letterClass}
-                strArray={"Projects".split("")}
-                idx={15}
-            />
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={'Projects'.split('')}
+            idx={15}
+          />
         </h1>
       </div>
       <Loader></Loader>
