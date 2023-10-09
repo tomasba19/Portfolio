@@ -10,6 +10,7 @@ import Loader from '../Loader/Loader'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const saluteArray = ['e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', ',']
   const nameArray = [
     ' ',
     'T',
@@ -63,37 +64,42 @@ const Home = () => {
 
   return (
     <>
-    <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i</span>
-          <span className={`${letterClass} _13`}>,</span>
-          <br />
-          <span className={`${letterClass} _14`}>I</span>
-          <span className={`${letterClass} _15`}>'</span>
-          <span className={`${letterClass} _16`}>m</span>
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <span className={letterClass}>H</span>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={saluteArray}
+              idx={10}
+            />
+            <br />
+            <span className={`${letterClass} _17`}>I</span>
+            <span className={`${letterClass} _18`}>'</span>
+            <span className={`${letterClass} _19`}>m</span>
 
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={17}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            idx={29}
-          />
-        </h1>
-        <h2>JavaScript / HTML / CSS / Node / React / Redux / SQL</h2>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={20}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={29}
+            />
+          </h1>
+          <h2 className="home-h2">
+            JavaScript / HTML / CSS / Node / React / Redux / SQL
+          </h2>
+          <Link to="/contact" className="flat-button">
+            CONTACT ME
+          </Link>
+        </div>
+        <Logo />
       </div>
-      <Logo />
-    </div>
-    <Loader></Loader>
+      <Loader></Loader>
     </>
   )
 }

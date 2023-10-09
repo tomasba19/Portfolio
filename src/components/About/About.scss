@@ -11,9 +11,34 @@
 .text-zone {
   font-size: 15px;
   font-family: 'Coolvetica';
-
 }
 
+.about-h2 {
+  color: #d00000;
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: 'Coolvetica';
+  animation: fadeIn 1s 1.8s backwards;
+}
+.about-hr {
+  border-color: #444;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: -30px;
+  animation: fadeIn 1s 1.8s backwards;
+}
+
+.about-h3 {
+  //color: #d00000;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Coolvetica';
+  animation: fadeIn 1s 1.8s backwards;
+}
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;
